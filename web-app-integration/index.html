@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snippet Test</title>
+  </head>
+  <body>
+    <script src="https://privcloud-components.s3.amazonaws.com/privcloud.js"></script>
+    <div id="test"></div>
+  </body>
+
+  <script>
+    const privcloud = window.createPrivCloud();
+    privcloud.createRecordList({
+      token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLjAsInR5cGUiOiJ1c2VyLWFjY2VzcyIsInN1YnR5cGUiOiJwb3J0YWwiLCJuYW1lIjoiYXJkYUB2YW50YWdlcG9pbnQuY28iLCJpZCI6MjMsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwianRpIjoiYWQ2NjI4NTctZmY5Ny00YWU2LTk2NTYtNDFkZmM4YjBiNzRkIiwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiaXNzdWVkX3RpbWVzdGFtcCI6IjIwMjEtMDktMDdUMDA6NDU6NTQuMTg3NzgxIiwic2lnbmF0dXJlX3B1YmxpY19rZXkiOiItLS0tLUJFR0lOIFBVQkxJQyBLRVktLS0tLVxuIE1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2JyNGI2Q1pFZktHVW40WnNkMlpKMXVYdFpcbiB0Vlg5NW1GTkM0aTM4YVVmblBER0FFWmVtOXdKb1FTYWdGbkxFQUdjSjljaEtnRXZoUVcxZ1FRRVlmTFJqeDc4XG4gNTlaMHV1SFlYWTk4OHArbDVDd0dsU0NrZmF3ZkgzMmRkVDU4OFc0VElFcUlLdmQzSlFKTlphNjdPYXNDS2VUclxuIG01UG14QTlqK1NuSXNDMmZNUUlEQVFBQlxuIC0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSIsInRhZ3MiOnsibWZhX3ByZXNlbnQiOmZhbHNlfSwiY29uZGl0aW9ucyI6eyJleHBpcmVzX2F0IjoiMjAyMS0wOS0wN1QwMToxNTo1NC4xODc4MDEifX0.acWXx8N3PIb2FRF2r63aSx0y4b0x61Dc2PmkRz8lrc8',
+      containerGuid: 'aaaaaaaa-a9eb-4425-b356-5f7976b5defb',
+      recordTypeId: 3,
+      anchor: document.getElementById('test'),
+      options: {
+        sorting: true,
+        pageSize: 10,
+        export: true,
+        search: true,
+        updatable: true,
+        addable: true,
+      }
+    });
+  </script>
+</html>

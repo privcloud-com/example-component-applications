@@ -1,0 +1,37 @@
+{
+  "name": "simple-reactjs-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://aditya-sridhar.github.io/simple-reactjs-app",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
+    "axios": "^0.18.0",
+    "axios-middleware": "^0.3.1",
+    "connected-react-router": "^6.9.1",
+    "react": "^16.14.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.14.0",
+    "react-json-editor-ajrm": "^2.5.13",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "1.1.4",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "msw": "^0.28.2"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}

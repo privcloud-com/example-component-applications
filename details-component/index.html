@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,34 +6,232 @@
   <body>
     <script src="https://privcloud-components.s3.amazonaws.com/privcloud.js"></script>
     <div id="simple"></div>
-    <div id="complex" style="margin-top: 16px;"></div>
+    <div id="complex" style="margin-top: 16px"></div>
   </body>
 
   <script>
     const privcloud = window.createPrivCloud();
     privcloud.createRecord({
-      token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLjAsInR5cGUiOiJ1c2VyLWFjY2VzcyIsInN1YnR5cGUiOiJwb3J0YWwiLCJuYW1lIjoiYXJkYUB2YW50YWdlcG9pbnQuY28iLCJpZCI6MjMsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwianRpIjoiZDdhODIxOTctMjQ3Yy00YjVlLTljYzUtNDlhNGYzMzM3MjExIiwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiaXNzdWVkX3RpbWVzdGFtcCI6IjIwMjEtMDktMTZUMTE6NTY6MzYuNDYyMTA5Iiwic2lnbmF0dXJlX3B1YmxpY19rZXkiOiItLS0tLUJFR0lOIFBVQkxJQyBLRVktLS0tLVxuIE1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2JyNGI2Q1pFZktHVW40WnNkMlpKMXVYdFpcbiB0Vlg5NW1GTkM0aTM4YVVmblBER0FFWmVtOXdKb1FTYWdGbkxFQUdjSjljaEtnRXZoUVcxZ1FRRVlmTFJqeDc4XG4gNTlaMHV1SFlYWTk4OHArbDVDd0dsU0NrZmF3ZkgzMmRkVDU4OFc0VElFcUlLdmQzSlFKTlphNjdPYXNDS2VUclxuIG01UG14QTlqK1NuSXNDMmZNUUlEQVFBQlxuIC0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSIsInRhZ3MiOnsibWZhX3ByZXNlbnQiOmZhbHNlfSwiY29uZGl0aW9ucyI6eyJleHBpcmVzX2F0IjoiMjAyMS0wOS0xNlQxMjoyNjozNi40NjIxMjkifX0.UP6Ns50HLJ9DUD4NY2oW6RqfmPzlyzNBlj_fdyTnMDk',
-      guid: 'aaaaaaaa-01c2-4e93-a55b-5653d1d0b538',
-      anchor: document.getElementById('simple'),
+      token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjMsImp0aSI6IjUyYmU0NTkyLTg4ZTgtNDdkZi1iNDE3LThlMDljOTBkNjQ2NCIsIm5hbWUiOiJhcmRhQHZhbnRhZ2Vwb2ludC5jbyIsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwidGFncyI6eyJtZmFfcHJlc2VudCI6ZmFsc2V9LCJ0eXBlIjoidXNlci1hdXRoIiwic3VidHlwZSI6InBvcnRhbCIsInZlcnNpb24iOjEuMCwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiY29uZGl0aW9ucyI6e30sImlzc3VlZF90aW1lc3RhbXAiOiIyMDIxLTExLTE4VDIzOjU4OjIxLjQ5NDU0NyIsInNpZ25hdHVyZV9wdWJsaWNfa2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ3FHS3VrTzFEZTd6aFpqNitIMHF0alRrVnh3VENwdktlNGVDWjBcbkZQcXJpMGNiMkpaZlhKL0RnWVNGNnZVcHdtSkc4d1ZRWktqZUdjakRPTDVVbHN1dXNGbmNDeldCUTdSS05VU2VzbVFSTVNHa1ZiMS9cbjNqK3NrWjZVdFcrNXUwOWxITnNqNnRRNTFzMVNQckNCa2VkYk5mMFRwMEdiTUpEeVI0ZTlUMDRaWndJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLVxuIn0.FtGJ6gEiwn_uGbhs41cH3JcChGfqAqnqK2R7rHNtunE",
+      guid: "aaaaaaaa-53d1-4f3b-88b2-a73304c6e9ef",
+      anchor: document.getElementById("simple"),
       options: {
-        title: 'Simple Example',
-      }
+        title: "Simple Example",
+      },
     });
 
     privcloud.createRecord({
-      token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLjAsInR5cGUiOiJ1c2VyLWFjY2VzcyIsInN1YnR5cGUiOiJwb3J0YWwiLCJuYW1lIjoiYXJkYUB2YW50YWdlcG9pbnQuY28iLCJpZCI6MjMsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwianRpIjoiZDdhODIxOTctMjQ3Yy00YjVlLTljYzUtNDlhNGYzMzM3MjExIiwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiaXNzdWVkX3RpbWVzdGFtcCI6IjIwMjEtMDktMTZUMTE6NTY6MzYuNDYyMTA5Iiwic2lnbmF0dXJlX3B1YmxpY19rZXkiOiItLS0tLUJFR0lOIFBVQkxJQyBLRVktLS0tLVxuIE1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2JyNGI2Q1pFZktHVW40WnNkMlpKMXVYdFpcbiB0Vlg5NW1GTkM0aTM4YVVmblBER0FFWmVtOXdKb1FTYWdGbkxFQUdjSjljaEtnRXZoUVcxZ1FRRVlmTFJqeDc4XG4gNTlaMHV1SFlYWTk4OHArbDVDd0dsU0NrZmF3ZkgzMmRkVDU4OFc0VElFcUlLdmQzSlFKTlphNjdPYXNDS2VUclxuIG01UG14QTlqK1NuSXNDMmZNUUlEQVFBQlxuIC0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSIsInRhZ3MiOnsibWZhX3ByZXNlbnQiOmZhbHNlfSwiY29uZGl0aW9ucyI6eyJleHBpcmVzX2F0IjoiMjAyMS0wOS0xNlQxMjoyNjozNi40NjIxMjkifX0.UP6Ns50HLJ9DUD4NY2oW6RqfmPzlyzNBlj_fdyTnMDk',
-      guid: 'aaaaaaaa-01c2-4e93-a55b-5653d1d0b538',
+      token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjMsImp0aSI6IjUyYmU0NTkyLTg4ZTgtNDdkZi1iNDE3LThlMDljOTBkNjQ2NCIsIm5hbWUiOiJhcmRhQHZhbnRhZ2Vwb2ludC5jbyIsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwidGFncyI6eyJtZmFfcHJlc2VudCI6ZmFsc2V9LCJ0eXBlIjoidXNlci1hdXRoIiwic3VidHlwZSI6InBvcnRhbCIsInZlcnNpb24iOjEuMCwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiY29uZGl0aW9ucyI6e30sImlzc3VlZF90aW1lc3RhbXAiOiIyMDIxLTExLTE4VDIzOjU4OjIxLjQ5NDU0NyIsInNpZ25hdHVyZV9wdWJsaWNfa2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ3FHS3VrTzFEZTd6aFpqNitIMHF0alRrVnh3VENwdktlNGVDWjBcbkZQcXJpMGNiMkpaZlhKL0RnWVNGNnZVcHdtSkc4d1ZRWktqZUdjakRPTDVVbHN1dXNGbmNDeldCUTdSS05VU2VzbVFSTVNHa1ZiMS9cbjNqK3NrWjZVdFcrNXUwOWxITnNqNnRRNTFzMVNQckNCa2VkYk5mMFRwMEdiTUpEeVI0ZTlUMDRaWndJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLVxuIn0.FtGJ6gEiwn_uGbhs41cH3JcChGfqAqnqK2R7rHNtunE",
+      guid: "aaaaaaaa-53d1-4f3b-88b2-a73304c6e9ef",
       options: {
-        title: 'Complex Example',
+        title: "Complex Example",
         displayTiming: true,
         updatable: true,
       },
       styles: {
-        backgroundColor: '#efefef',
-        inputVariant: 'outlined',
-        elevation: 3,
+        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
+        spacing: 1,
+        cols: 12,
+        button: {
+          delete: {
+            elevation: true,
+            backgroundColor: "#f6a4eb",
+            color: "#fff",
+            textTransform: "uppercase",
+          },
+          create: {
+            elevation: true,
+            backgroundColor: "#42a3ef",
+            color: "#fff",
+            textTransform: "uppercase",
+          },
+        },
+        option: {
+          noLabel: true,
+          adornment: true,
+        },
+        content: {
+          elevation: 3,
+          backgroundColor: "#7795f8",
+        },
+        card: {
+          elevation: 3,
+          backgroundColor: "#6772e5",
+          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+        },
+        title: {
+          color: "#c4f0ff",
+        },
+        item: {
+          label: {
+            adornmentColor: "#c4f0ff",
+            fontWeight: 500,
+          },
+          value: {
+            color: "#fff",
+            borderBottom: "1px solid #819efc",
+          },
+        },
+        status: {
+          color: "#fff",
+        },
       },
-      anchor: document.getElementById('complex'),
+      anchor: document.getElementById("complex"),
+    });
+
+    privcloud.createRecord({
+      token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjMsImp0aSI6IjUyYmU0NTkyLTg4ZTgtNDdkZi1iNDE3LThlMDljOTBkNjQ2NCIsIm5hbWUiOiJhcmRhQHZhbnRhZ2Vwb2ludC5jbyIsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwidGFncyI6eyJtZmFfcHJlc2VudCI6ZmFsc2V9LCJ0eXBlIjoidXNlci1hdXRoIiwic3VidHlwZSI6InBvcnRhbCIsInZlcnNpb24iOjEuMCwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiY29uZGl0aW9ucyI6e30sImlzc3VlZF90aW1lc3RhbXAiOiIyMDIxLTExLTE4VDIzOjU4OjIxLjQ5NDU0NyIsInNpZ25hdHVyZV9wdWJsaWNfa2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ3FHS3VrTzFEZTd6aFpqNitIMHF0alRrVnh3VENwdktlNGVDWjBcbkZQcXJpMGNiMkpaZlhKL0RnWVNGNnZVcHdtSkc4d1ZRWktqZUdjakRPTDVVbHN1dXNGbmNDeldCUTdSS05VU2VzbVFSTVNHa1ZiMS9cbjNqK3NrWjZVdFcrNXUwOWxITnNqNnRRNTFzMVNQckNCa2VkYk5mMFRwMEdiTUpEeVI0ZTlUMDRaWndJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLVxuIn0.FtGJ6gEiwn_uGbhs41cH3JcChGfqAqnqK2R7rHNtunE",
+      guid: "aaaaaaaa-53d1-4f3b-88b2-a73304c6e9ef",
+      options: {
+        title: "Complex Example",
+        displayTiming: true,
+        updatable: true,
+      },
+      styles: {
+        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
+        spacing: 1,
+        button: {
+          create: {
+            backgroundColor: "#24b47e",
+            color: "#fff",
+            textTransform: "uppercase",
+          },
+        },
+        card: {
+          elevation: 3,
+          backgroundColor: "#fff",
+          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+        },
+        title: {
+          color: "#24b47e",
+        },
+        item: {
+          value: {
+            color: "#32325d",
+            borderBottom: "1px solid #24b47e",
+            focusedColor: "#24b47e",
+          },
+        },
+        status: {
+          color: "#32325d",
+        },
+      },
+      anchor: document.getElementById("complex"),
+    });
+
+    privcloud.createRecord({
+      token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjMsImp0aSI6IjUyYmU0NTkyLTg4ZTgtNDdkZi1iNDE3LThlMDljOTBkNjQ2NCIsIm5hbWUiOiJhcmRhQHZhbnRhZ2Vwb2ludC5jbyIsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwidGFncyI6eyJtZmFfcHJlc2VudCI6ZmFsc2V9LCJ0eXBlIjoidXNlci1hdXRoIiwic3VidHlwZSI6InBvcnRhbCIsInZlcnNpb24iOjEuMCwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiY29uZGl0aW9ucyI6e30sImlzc3VlZF90aW1lc3RhbXAiOiIyMDIxLTExLTE4VDIzOjU4OjIxLjQ5NDU0NyIsInNpZ25hdHVyZV9wdWJsaWNfa2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ3FHS3VrTzFEZTd6aFpqNitIMHF0alRrVnh3VENwdktlNGVDWjBcbkZQcXJpMGNiMkpaZlhKL0RnWVNGNnZVcHdtSkc4d1ZRWktqZUdjakRPTDVVbHN1dXNGbmNDeldCUTdSS05VU2VzbVFSTVNHa1ZiMS9cbjNqK3NrWjZVdFcrNXUwOWxITnNqNnRRNTFzMVNQckNCa2VkYk5mMFRwMEdiTUpEeVI0ZTlUMDRaWndJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLVxuIn0.FtGJ6gEiwn_uGbhs41cH3JcChGfqAqnqK2R7rHNtunE",
+      guid: "aaaaaaaa-53d1-4f3b-88b2-a73304c6e9ef",
+      options: {
+        title: "Complex Example",
+        displayTiming: true,
+        updatable: true,
+      },
+      styles: {
+        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
+        spacing: 1,
+        cols: 12,
+        button: {
+          delete: {
+            textTransform: "uppercase",
+          },
+          create: {
+            backgroundColor: "#fff",
+            color: "#9169d8",
+            textTransform: "uppercase",
+          },
+        },
+        option: {
+          shrinkLabel: true,
+          placeholder: true,
+        },
+        content: {
+          backgroundColor: "#9169d8",
+        },
+        card: {
+          elevation: 3,
+          backgroundColor: "#9169d8",
+          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+        },
+        title: {
+          color: "#cdd0f8",
+        },
+        item: {
+          label: {
+            color: "#cdd0f8",
+          },
+          value: {
+            color: "#fff",
+            borderBottom: "1px solid #cdd0f8",
+            focusedColor: "#cdd0f8",
+          },
+        },
+        status: {
+          color: "#cdd0f8",
+        },
+      },
+      anchor: document.getElementById("complex"),
+    });
+
+    privcloud.createRecord({
+      token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjMsImp0aSI6IjUyYmU0NTkyLTg4ZTgtNDdkZi1iNDE3LThlMDljOTBkNjQ2NCIsIm5hbWUiOiJhcmRhQHZhbnRhZ2Vwb2ludC5jbyIsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwidGFncyI6eyJtZmFfcHJlc2VudCI6ZmFsc2V9LCJ0eXBlIjoidXNlci1hdXRoIiwic3VidHlwZSI6InBvcnRhbCIsInZlcnNpb24iOjEuMCwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiY29uZGl0aW9ucyI6e30sImlzc3VlZF90aW1lc3RhbXAiOiIyMDIxLTExLTE4VDIzOjU4OjIxLjQ5NDU0NyIsInNpZ25hdHVyZV9wdWJsaWNfa2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ3FHS3VrTzFEZTd6aFpqNitIMHF0alRrVnh3VENwdktlNGVDWjBcbkZQcXJpMGNiMkpaZlhKL0RnWVNGNnZVcHdtSkc4d1ZRWktqZUdjakRPTDVVbHN1dXNGbmNDeldCUTdSS05VU2VzbVFSTVNHa1ZiMS9cbjNqK3NrWjZVdFcrNXUwOWxITnNqNnRRNTFzMVNQckNCa2VkYk5mMFRwMEdiTUpEeVI0ZTlUMDRaWndJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLVxuIn0.FtGJ6gEiwn_uGbhs41cH3JcChGfqAqnqK2R7rHNtunE",
+      guid: "aaaaaaaa-53d1-4f3b-88b2-a73304c6e9ef",
+      options: {
+        title: "Complex Example",
+        displayTiming: true,
+        updatable: true,
+      },
+      styles: {
+        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
+        spacing: 1,
+        cols: 12,
+        button: {
+          delete: {
+            textTransform: "uppercase",
+            fontWeight: "600",
+          },
+          create: {
+            backgroundColor: "#fcd669",
+            color: "#525f7f",
+            textTransform: "uppercase",
+            fontWeight: "600",
+          },
+        },
+        option: {
+          noLabel: true,
+          placeholder: true,
+        },
+        content: {
+          backgroundColor: "#525f7f",
+        },
+        card: {
+          elevation: 3,
+          backgroundColor: "#525f7f",
+          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+        },
+        title: {
+          color: "#7488aa",
+        },
+        item: {
+          value: {
+            borderBottom: "transparent",
+            color: "#fff",
+            borderRadius: "26px !important",
+            backgroundColor: "#7488aa",
+            focusedBackgroundColor: "#7488aa",
+            padding: "10px 20px",
+          },
+        },
+        status: {
+          color: "#7488aa",
+        },
+      },
+      anchor: document.getElementById("complex"),
     });
   </script>
 </html>

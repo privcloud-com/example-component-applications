@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,28 +6,33 @@
   <body>
     <script src="https://privcloud-components.s3.amazonaws.com/privcloud.js"></script>
     <div id="simple"></div>
-    <div id="complex" style="margin-top: 16px;"></div>
+    <div id="complex1" style="margin-top: 16px"></div>
+    <div id="complex2" style="margin-top: 16px"></div>
+    <div id="complex3" style="margin-top: 16px"></div>
+    <div id="complex4" style="margin-top: 16px"></div>
   </body>
 
   <script>
     const privcloud = window.createPrivCloud();
     privcloud.createRecordList({
-      token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLjAsInR5cGUiOiJ1c2VyLWFjY2VzcyIsInN1YnR5cGUiOiJwb3J0YWwiLCJuYW1lIjoiYXJkYUB2YW50YWdlcG9pbnQuY28iLCJpZCI6MjMsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwianRpIjoiNDk2NjdhZjEtYWVlMi00YTkzLThkMmUtMjA3ZTM1ZDVkNTA1IiwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiaXNzdWVkX3RpbWVzdGFtcCI6IjIwMjEtMDktMjFUMTc6MjM6NTYuODAzMDgyIiwic2lnbmF0dXJlX3B1YmxpY19rZXkiOiItLS0tLUJFR0lOIFBVQkxJQyBLRVktLS0tLVxuIE1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2JyNGI2Q1pFZktHVW40WnNkMlpKMXVYdFpcbiB0Vlg5NW1GTkM0aTM4YVVmblBER0FFWmVtOXdKb1FTYWdGbkxFQUdjSjljaEtnRXZoUVcxZ1FRRVlmTFJqeDc4XG4gNTlaMHV1SFlYWTk4OHArbDVDd0dsU0NrZmF3ZkgzMmRkVDU4OFc0VElFcUlLdmQzSlFKTlphNjdPYXNDS2VUclxuIG01UG14QTlqK1NuSXNDMmZNUUlEQVFBQlxuIC0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSIsInRhZ3MiOnsibWZhX3ByZXNlbnQiOmZhbHNlfSwiY29uZGl0aW9ucyI6eyJleHBpcmVzX2F0IjoiMjAyMS0wOS0yMVQxNzo1Mzo1Ni44MDMxMDkifX0.IPXIZHOLR39-asuVlFWsMUGpk1wb7_SB7c3EBXiohoQ',
-      containerGuid: 'aaaaaaaa-a9eb-4425-b356-5f7976b5defb',
+      token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjMsImp0aSI6IjUyYmU0NTkyLTg4ZTgtNDdkZi1iNDE3LThlMDljOTBkNjQ2NCIsIm5hbWUiOiJhcmRhQHZhbnRhZ2Vwb2ludC5jbyIsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwidGFncyI6eyJtZmFfcHJlc2VudCI6ZmFsc2V9LCJ0eXBlIjoidXNlci1hdXRoIiwic3VidHlwZSI6InBvcnRhbCIsInZlcnNpb24iOjEuMCwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiY29uZGl0aW9ucyI6e30sImlzc3VlZF90aW1lc3RhbXAiOiIyMDIxLTExLTE4VDIzOjU4OjIxLjQ5NDU0NyIsInNpZ25hdHVyZV9wdWJsaWNfa2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ3FHS3VrTzFEZTd6aFpqNitIMHF0alRrVnh3VENwdktlNGVDWjBcbkZQcXJpMGNiMkpaZlhKL0RnWVNGNnZVcHdtSkc4d1ZRWktqZUdjakRPTDVVbHN1dXNGbmNDeldCUTdSS05VU2VzbVFSTVNHa1ZiMS9cbjNqK3NrWjZVdFcrNXUwOWxITnNqNnRRNTFzMVNQckNCa2VkYk5mMFRwMEdiTUpEeVI0ZTlUMDRaWndJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLVxuIn0.FtGJ6gEiwn_uGbhs41cH3JcChGfqAqnqK2R7rHNtunE",
+      containerGuid: "aaaaaaaa-a9eb-4425-b356-5f7976b5defb",
       recordTypeId: 3,
-      anchor: document.getElementById('simple'),
+      anchor: document.getElementById("simple"),
       options: {
-        title: 'Simple Example',
-      }
+        title: "Simple Example",
+      },
     });
 
     privcloud.createRecordList({
-      token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLjAsInR5cGUiOiJ1c2VyLWFjY2VzcyIsInN1YnR5cGUiOiJwb3J0YWwiLCJuYW1lIjoiYXJkYUB2YW50YWdlcG9pbnQuY28iLCJpZCI6MjMsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwianRpIjoiNDk2NjdhZjEtYWVlMi00YTkzLThkMmUtMjA3ZTM1ZDVkNTA1IiwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiaXNzdWVkX3RpbWVzdGFtcCI6IjIwMjEtMDktMjFUMTc6MjM6NTYuODAzMDgyIiwic2lnbmF0dXJlX3B1YmxpY19rZXkiOiItLS0tLUJFR0lOIFBVQkxJQyBLRVktLS0tLVxuIE1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ2JyNGI2Q1pFZktHVW40WnNkMlpKMXVYdFpcbiB0Vlg5NW1GTkM0aTM4YVVmblBER0FFWmVtOXdKb1FTYWdGbkxFQUdjSjljaEtnRXZoUVcxZ1FRRVlmTFJqeDc4XG4gNTlaMHV1SFlYWTk4OHArbDVDd0dsU0NrZmF3ZkgzMmRkVDU4OFc0VElFcUlLdmQzSlFKTlphNjdPYXNDS2VUclxuIG01UG14QTlqK1NuSXNDMmZNUUlEQVFBQlxuIC0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSIsInRhZ3MiOnsibWZhX3ByZXNlbnQiOmZhbHNlfSwiY29uZGl0aW9ucyI6eyJleHBpcmVzX2F0IjoiMjAyMS0wOS0yMVQxNzo1Mzo1Ni44MDMxMDkifX0.IPXIZHOLR39-asuVlFWsMUGpk1wb7_SB7c3EBXiohoQ',
-      containerGuid: 'aaaaaaaa-a9eb-4425-b356-5f7976b5defb',
+      token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjMsImp0aSI6IjUyYmU0NTkyLTg4ZTgtNDdkZi1iNDE3LThlMDljOTBkNjQ2NCIsIm5hbWUiOiJhcmRhQHZhbnRhZ2Vwb2ludC5jbyIsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwidGFncyI6eyJtZmFfcHJlc2VudCI6ZmFsc2V9LCJ0eXBlIjoidXNlci1hdXRoIiwic3VidHlwZSI6InBvcnRhbCIsInZlcnNpb24iOjEuMCwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiY29uZGl0aW9ucyI6e30sImlzc3VlZF90aW1lc3RhbXAiOiIyMDIxLTExLTE4VDIzOjU4OjIxLjQ5NDU0NyIsInNpZ25hdHVyZV9wdWJsaWNfa2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ3FHS3VrTzFEZTd6aFpqNitIMHF0alRrVnh3VENwdktlNGVDWjBcbkZQcXJpMGNiMkpaZlhKL0RnWVNGNnZVcHdtSkc4d1ZRWktqZUdjakRPTDVVbHN1dXNGbmNDeldCUTdSS05VU2VzbVFSTVNHa1ZiMS9cbjNqK3NrWjZVdFcrNXUwOWxITnNqNnRRNTFzMVNQckNCa2VkYk5mMFRwMEdiTUpEeVI0ZTlUMDRaWndJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLVxuIn0.FtGJ6gEiwn_uGbhs41cH3JcChGfqAqnqK2R7rHNtunE",
+      containerGuid: "aaaaaaaa-a9eb-4425-b356-5f7976b5defb",
       recordTypeId: 3,
-      anchor: document.getElementById('complex'),
+      anchor: document.getElementById("complex1"),
       options: {
-        title: 'Complex Example',
+        title: "Complex Example",
         sorting: true,
         pageSize: 10,
         export: true,
@@ -36,7 +40,121 @@
         updatable: true,
         addable: true,
         deletable: true,
-      }
+      },
+      styles: {
+        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
+        tableStyle: {
+          color: "#c4f0ff",
+          backgroundColor: "#6772e5",
+          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+          fontWeight: 500,
+        },
+        rowStyle: {
+          actionColor: "#fff",
+          color: "#fff",
+          backgroundColor: "#7795f8",
+          fontWeight: 500,
+        },
+      },
+    });
+
+    privcloud.createRecordList({
+      token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjMsImp0aSI6IjUyYmU0NTkyLTg4ZTgtNDdkZi1iNDE3LThlMDljOTBkNjQ2NCIsIm5hbWUiOiJhcmRhQHZhbnRhZ2Vwb2ludC5jbyIsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwidGFncyI6eyJtZmFfcHJlc2VudCI6ZmFsc2V9LCJ0eXBlIjoidXNlci1hdXRoIiwic3VidHlwZSI6InBvcnRhbCIsInZlcnNpb24iOjEuMCwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiY29uZGl0aW9ucyI6e30sImlzc3VlZF90aW1lc3RhbXAiOiIyMDIxLTExLTE4VDIzOjU4OjIxLjQ5NDU0NyIsInNpZ25hdHVyZV9wdWJsaWNfa2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ3FHS3VrTzFEZTd6aFpqNitIMHF0alRrVnh3VENwdktlNGVDWjBcbkZQcXJpMGNiMkpaZlhKL0RnWVNGNnZVcHdtSkc4d1ZRWktqZUdjakRPTDVVbHN1dXNGbmNDeldCUTdSS05VU2VzbVFSTVNHa1ZiMS9cbjNqK3NrWjZVdFcrNXUwOWxITnNqNnRRNTFzMVNQckNCa2VkYk5mMFRwMEdiTUpEeVI0ZTlUMDRaWndJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLVxuIn0.FtGJ6gEiwn_uGbhs41cH3JcChGfqAqnqK2R7rHNtunE",
+      containerGuid: "aaaaaaaa-a9eb-4425-b356-5f7976b5defb",
+      recordTypeId: 3,
+      anchor: document.getElementById("complex2"),
+      options: {
+        title: "Complex Example",
+        sorting: true,
+        pageSize: 10,
+        export: true,
+        search: true,
+        updatable: true,
+        addable: true,
+        deletable: true,
+      },
+      styles: {
+        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
+        tableStyle: {
+          color: "#32325d",
+          backgroundColor: "#fff",
+          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+          fontWeight: 500,
+        },
+        rowStyle: {
+          actionColor: "#24b47e",
+          color: "#32325d",
+          backgroundColor: "#fff",
+          fontWeight: 500,
+        },
+      },
+    });
+
+    privcloud.createRecordList({
+      token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjMsImp0aSI6IjUyYmU0NTkyLTg4ZTgtNDdkZi1iNDE3LThlMDljOTBkNjQ2NCIsIm5hbWUiOiJhcmRhQHZhbnRhZ2Vwb2ludC5jbyIsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwidGFncyI6eyJtZmFfcHJlc2VudCI6ZmFsc2V9LCJ0eXBlIjoidXNlci1hdXRoIiwic3VidHlwZSI6InBvcnRhbCIsInZlcnNpb24iOjEuMCwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiY29uZGl0aW9ucyI6e30sImlzc3VlZF90aW1lc3RhbXAiOiIyMDIxLTExLTE4VDIzOjU4OjIxLjQ5NDU0NyIsInNpZ25hdHVyZV9wdWJsaWNfa2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ3FHS3VrTzFEZTd6aFpqNitIMHF0alRrVnh3VENwdktlNGVDWjBcbkZQcXJpMGNiMkpaZlhKL0RnWVNGNnZVcHdtSkc4d1ZRWktqZUdjakRPTDVVbHN1dXNGbmNDeldCUTdSS05VU2VzbVFSTVNHa1ZiMS9cbjNqK3NrWjZVdFcrNXUwOWxITnNqNnRRNTFzMVNQckNCa2VkYk5mMFRwMEdiTUpEeVI0ZTlUMDRaWndJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLVxuIn0.FtGJ6gEiwn_uGbhs41cH3JcChGfqAqnqK2R7rHNtunE",
+      containerGuid: "aaaaaaaa-a9eb-4425-b356-5f7976b5defb",
+      recordTypeId: 3,
+      anchor: document.getElementById("complex3"),
+      options: {
+        title: "Complex Example",
+        sorting: true,
+        pageSize: 10,
+        export: true,
+        search: true,
+        updatable: true,
+        addable: true,
+        deletable: true,
+      },
+      styles: {
+        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
+        tableStyle: {
+          color: "#fff",
+          backgroundColor: "#525f7f",
+          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+          fontWeight: 500,
+        },
+        rowStyle: {
+          actionColor: "#fcd669",
+          color: "#fff",
+          backgroundColor: "#7488aa",
+          fontWeight: 500,
+        },
+      },
+    });
+
+    privcloud.createRecordList({
+      token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjMsImp0aSI6IjUyYmU0NTkyLTg4ZTgtNDdkZi1iNDE3LThlMDljOTBkNjQ2NCIsIm5hbWUiOiJhcmRhQHZhbnRhZ2Vwb2ludC5jbyIsInBjcm4iOiJwY3JuOjEyMzQ1Njc4OmVudGl0eS91c2VyOjIzIiwidGFncyI6eyJtZmFfcHJlc2VudCI6ZmFsc2V9LCJ0eXBlIjoidXNlci1hdXRoIiwic3VidHlwZSI6InBvcnRhbCIsInZlcnNpb24iOjEuMCwiZm9yX3NpdGUiOiJzdGFnaW5nLWFwaS5wcml2Y2xvdWQuY29tIiwiY29uZGl0aW9ucyI6e30sImlzc3VlZF90aW1lc3RhbXAiOiIyMDIxLTExLTE4VDIzOjU4OjIxLjQ5NDU0NyIsInNpZ25hdHVyZV9wdWJsaWNfa2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1JR2ZNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0R05BRENCaVFLQmdRQ3FHS3VrTzFEZTd6aFpqNitIMHF0alRrVnh3VENwdktlNGVDWjBcbkZQcXJpMGNiMkpaZlhKL0RnWVNGNnZVcHdtSkc4d1ZRWktqZUdjakRPTDVVbHN1dXNGbmNDeldCUTdSS05VU2VzbVFSTVNHa1ZiMS9cbjNqK3NrWjZVdFcrNXUwOWxITnNqNnRRNTFzMVNQckNCa2VkYk5mMFRwMEdiTUpEeVI0ZTlUMDRaWndJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLVxuIn0.FtGJ6gEiwn_uGbhs41cH3JcChGfqAqnqK2R7rHNtunE",
+      containerGuid: "aaaaaaaa-a9eb-4425-b356-5f7976b5defb",
+      recordTypeId: 3,
+      anchor: document.getElementById("complex4"),
+      options: {
+        title: "Complex Example",
+        sorting: true,
+        pageSize: 10,
+        export: true,
+        search: true,
+        updatable: true,
+        addable: true,
+        deletable: true,
+      },
+      styles: {
+        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
+        tableStyle: {
+          color: "#fff",
+          backgroundColor: "#9169d8",
+          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+          fontWeight: 500,
+        },
+        rowStyle: {
+          actionColor: "#fff",
+          color: "#fff",
+          backgroundColor: "#9169d8",
+          fontWeight: 500,
+        },
+      },
     });
   </script>
 </html>

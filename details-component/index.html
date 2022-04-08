@@ -35,51 +35,34 @@
         updatable: true,
       },
       styles: {
-        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
-        spacing: 1,
+        fontSources: [
+          "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap",
+        ],
         cols: 12,
-        button: {
-          delete: {
-            elevation: true,
-            backgroundColor: "#f6a4eb",
-            color: "#fff",
-            textTransform: "uppercase",
-          },
-          create: {
-            elevation: true,
-            backgroundColor: "#42a3ef",
-            color: "#fff",
-            textTransform: "uppercase",
-          },
+        titleTextColor: "#c4f0ff",
+        bodyTextColor: "#fff",
+        actionColor: "#819efc",
+        card: {
+          fontFamily: "'Manrope', sans-serif",
+          backgroundColor: "#6772e5",
+        },
+        body: {
+          elevation: 3,
+          backgroundColor: "#7795f8",
+        },
+        deleteButton: {
+          elevation: true,
+          backgroundColor: "#f6a4eb",
+          textTransform: "uppercase",
+        },
+        updateButton: {
+          elevation: true,
+          backgroundColor: "#42a3ef",
+          textTransform: "uppercase",
         },
         option: {
           noLabel: true,
           adornment: true,
-        },
-        content: {
-          elevation: 3,
-          backgroundColor: "#7795f8",
-        },
-        card: {
-          elevation: 3,
-          backgroundColor: "#6772e5",
-          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
-        },
-        title: {
-          color: "#c4f0ff",
-        },
-        item: {
-          label: {
-            adornmentColor: "#c4f0ff",
-            fontWeight: 500,
-          },
-          value: {
-            color: "#fff",
-            borderBottom: "1px solid #819efc",
-          },
-        },
-        status: {
-          color: "#fff",
         },
       },
       anchor: document.getElementById("complex1"),
@@ -95,32 +78,11 @@
         updatable: true,
       },
       styles: {
-        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
-        spacing: 1,
-        button: {
-          create: {
-            backgroundColor: "#24b47e",
-            color: "#fff",
-            textTransform: "uppercase",
-          },
-        },
-        card: {
-          elevation: 3,
-          backgroundColor: "#fff",
-          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
-        },
-        title: {
-          color: "#24b47e",
-        },
-        item: {
-          value: {
-            color: "#32325d",
-            borderBottom: "1px solid #24b47e",
-            focusedColor: "#24b47e",
-          },
-        },
-        status: {
-          color: "#32325d",
+        titleTextColor: "#24b47e",
+        bodyTextColor: "#32325d",
+        actionColor: "#24b47e",
+        updateButton: {
+          backgroundColor: "#24b47e",
         },
       },
       anchor: document.getElementById("complex2"),
@@ -136,46 +98,32 @@
         updatable: true,
       },
       styles: {
-        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
-        spacing: 1,
         cols: 12,
-        button: {
-          delete: {
-            textTransform: "uppercase",
-          },
-          create: {
-            backgroundColor: "#fff",
-            color: "#9169d8",
-            textTransform: "uppercase",
-          },
+        fontSources: [
+          "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap",
+        ],
+        titleTextColor: "#cdd0f8",
+        bodyTextColor: "#fff",
+        actionColor: "#cdd0f8",
+        placeholderColor: "#BFA8E8",
+        card: {
+          backgroundColor: "#9169d8",
+          fontFamily: "'Manrope', sans-serif",
+        },
+        deleteButton: {
+          textTransform: "uppercase",
+        },
+        updateButton: {
+          backgroundColor: "#fff",
+          color: "#9169d8",
+          textTransform: "uppercase",
+        },
+        body: {
+          backgroundColor: "#9169d8",
         },
         option: {
           shrinkLabel: true,
           placeholder: true,
-        },
-        content: {
-          backgroundColor: "#9169d8",
-        },
-        card: {
-          elevation: 3,
-          backgroundColor: "#9169d8",
-          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
-        },
-        title: {
-          color: "#cdd0f8",
-        },
-        item: {
-          label: {
-            color: "#cdd0f8",
-          },
-          value: {
-            color: "#fff",
-            borderBottom: "1px solid #cdd0f8",
-            focusedColor: "#cdd0f8",
-          },
-        },
-        status: {
-          color: "#cdd0f8",
         },
       },
       anchor: document.getElementById("complex3"),
@@ -191,48 +139,36 @@
         updatable: true,
       },
       styles: {
-        fontSrc: "https://fonts.googleapis.com/css?family=Roboto",
-        spacing: 1,
+        fontSources: [
+          "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap",
+        ],
         cols: 12,
-        button: {
-          delete: {
-            textTransform: "uppercase",
-            fontWeight: "600",
-          },
-          create: {
-            backgroundColor: "#fcd669",
-            color: "#525f7f",
-            textTransform: "uppercase",
-            fontWeight: "600",
-          },
+        titleTextColor: "#7488aa",
+        actionColor: "transparent",
+        bodyTextColor: "#fff",
+        bodyTextRadius: "26px !important",
+        bodyTextBgColor: "#7488aa",
+        bodyTextPadding: "10px 20px",
+        card: {
+          backgroundColor: "#525f7f",
+          fontFamily: "'Manrope', sans-serif",
+        },
+        body: {
+          backgroundColor: "#525f7f",
+        },
+        deleteButton: {
+          textTransform: "uppercase",
+          fontWeight: "600",
+        },
+        updateButton: {
+          backgroundColor: "#fcd669",
+          color: "#525f7f",
+          textTransform: "uppercase",
+          fontWeight: "600",
         },
         option: {
           noLabel: true,
           placeholder: true,
-        },
-        content: {
-          backgroundColor: "#525f7f",
-        },
-        card: {
-          elevation: 3,
-          backgroundColor: "#525f7f",
-          fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
-        },
-        title: {
-          color: "#7488aa",
-        },
-        item: {
-          value: {
-            borderBottom: "transparent",
-            color: "#fff",
-            borderRadius: "26px !important",
-            backgroundColor: "#7488aa",
-            focusedBackgroundColor: "#7488aa",
-            padding: "10px 20px",
-          },
-        },
-        status: {
-          color: "#7488aa",
         },
       },
       anchor: document.getElementById("complex4"),
